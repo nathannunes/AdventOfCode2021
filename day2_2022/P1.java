@@ -3,14 +3,15 @@ package day2_2022;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class P1 {
     public static void main(String[] args) {
 		HashMap<String, String[]> pairs = new HashMap<String,String[]>() {{
-			put("A", new String[]{"X","Y"});
-			put("B", new String[]{"Y","Z"});
-			put("C", new String[]{"Z","X"});
+			put("A", new String[]{"X","Y", "2"});
+			put("B", new String[]{"Y","Z", "3"});
+			put("C", new String[]{"Z","X", "1"});
 		}};
 		HashMap<String,Integer> points = new HashMap<>(){{
 			put("Y", 2);
